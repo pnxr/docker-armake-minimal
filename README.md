@@ -1,6 +1,6 @@
 # docker-armake-minimal
 
-Small Dockerimage with the latest version of [Armake] compiled from source hosted at [Docker Hub].
+Small Dockerimage with the latest version of [Armake] compiled from source master branch hosted at [Docker Hub].
 
 ## Usage
 Simple example of unpacking a pbo file *mission.pbo* into subfolder *mission* of the current directory with this image:
