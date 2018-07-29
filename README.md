@@ -1,5 +1,3 @@
-# docker-armake-minimal
-
 Small Dockerimage with the latest version of [Armake] compiled from source master branch hosted at [Docker Hub].
 
 # Usage
