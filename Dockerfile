@@ -5,8 +5,8 @@ MAINTAINER pnxr@regxr.eu
 ARG ARMAKE_MIRROR="https://github.com/KoffeinFlummi/armake.git"
 ARG ARMAKE_DEPENDENCIES="libssl1.1"
 ARG BUILD_DEPENDENCIES="libssl-dev build-essential bison flex git ca-certificates"
-ARG	DEBIAN_FRONTEND=noninteractive
-ARG	USER=armake
+ARG DEBIAN_FRONTEND=noninteractive
+ARG USER=armake
 
 #update base system, install all deps, download armake & install, remove build deps, cleanup image
 RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends ${BUILD_DEPENDENCIES} ${ARMAKE_DEPENDENCIES}; \
