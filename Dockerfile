@@ -17,7 +17,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-reco
 	apt-get remove --purge -y ${BUILD_DEPENDENCIES} && apt-get autoremove -y; \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/log/* /home/${USER}/armake_installer
 
-#configurate startup
+#configure startup
 USER ${USER}
 VOLUME ["/data"]
 ENTRYPOINT ["armake"]
